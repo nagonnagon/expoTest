@@ -53,6 +53,15 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// レイヤー_2
+	this.text = new cjs.Text("HELLO WORLD", "96px 'Helvetica'", "#0066CC");
+	this.text.lineHeight = 110;
+	this.text.lineWidth = 1129;
+	this.text.parent = this;
+	this.text.setTransform(-13.2,-29.85,1.2723,1.6976);
+
+	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
+
 	// レイヤー_1
 	this.instance = new lib.emoji4();
 	this.instance.setTransform(633,1933);
@@ -65,7 +74,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(575,1235,656,1297);
+p.nominalBounds = new cjs.Rectangle(569.3,1232.8,856.3,1299.2);
 // library properties:
 lib.properties = {
 	id: 'D842311649A7420881F4384D0E624D27',
